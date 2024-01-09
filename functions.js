@@ -24,7 +24,19 @@ function numeroAlCuadrado(numero){
 const numeroAlCuadradoFlecha = (numero) =>{return numero**2}
 /*
  * calcular la conversion de grados celsius a farenheit
+*/
+function deCelciusAFarenheit(celcius){
+    return (celcius*(9/5))+32} 
+    
+const deCelciusAFarenheitFlecha = (celcius) =>{return (celcius*(9/5))+32}
+/*
  * calcular el valor del voltaje dadas la resistencia y la corriente
+*/
+function voltaje(resistencia, corriente){
+    return resistencia*corriente} 
+    
+const voltajeFlecha = (resistencia, corriente) =>{return resistencia*corriente}
+/*
  * calcular el volumen de una esfera
  * 
  * CONSIDERACIONES: poner en practica las mejores practicas para declarar funciones
