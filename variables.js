@@ -71,17 +71,28 @@ let tienePasillo = false;
 console.log(tienePasillo);
 let tieneJardin = true;
 console.log(tieneJardin);
-
-
-
-
 /*
- * Declarar variables numericas y realizar las operaciones aritmeticas basicas
- *      -suma
- *      -resta
- *      -multiplicacion
- *      -division
- * 
+ Declarar variables numericas y realizar las operaciones aritmeticas basicas
+ -suma
+ */
+let muebles = HOUSE_SOFA + HOUSE_CHAIRS + HOUSE_TABLES;
+console.log("Esta es la cantidad de muebles que hay: " + muebles);
+/*
+-resta
+*/
+let cubiertos = HOUSE_SPOONS - HOUSE_FORKS;
+console.log("Esta es la cantidad de cubiertos que faltan: " + cubiertos);
+/*
+-multiplicacion
+*/
+let dosCasas = muebles*2;
+console.log("Esta es la cantidad de muebles necesarios para dos casas: " + dosCasas);
+/*
+-division
+*/
+let lavarseManos = HOUSE_SINKS/2;
+console.log("Esta es la cantidad de lavamanos que dos personas pueden usar en la casa a la vez: " + lavarseManos);
+/*
  * Declarar variables que concatenen cadenas de texto
  *      -5 mensajes diferentes en pantalla, sin limite de palabras.
  * 
