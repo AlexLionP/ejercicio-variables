@@ -107,8 +107,27 @@ console.log("Esta es la cantidad de lavamanos que dos personas pueden usar en la
  let parejaSergioJennifer = mascotaSergio + " y " + mascotaJennifer;
  console.log("Esta pareja tiene como mascotas: " + parejaSergioJennifer);
  /*
- * Declarar 5 variables y convertirlas a otro tipo de dato
- * 
+ Declarar 5 variables y convertirlas a otro tipo de dato
+ */
+let computerOn = true;
+console.log(computerOn);
+let computerNumber = Number(computerOn);
+console.log(computerNumber);
+let computerString = String(computerOn);
+console.log(computerString);
+
+let piNumber = 3.1416
+console.log(piNumber);
+let piString = String(piNumber);
+console.log(piString);
+let piBoolean = Boolean(piNumber);
+console.log(piBoolean);
+
+let numeroCuatro = "4";
+console.log(numeroCuatro);
+let cuatroNumber = Number(numeroCuatro);
+console.log(cuatroNumber);
+ /*
  *  CONSIDERACIONES: poner en practica las mejores practicas para declaracion de variables.
  * Imprimir los resultados en pantalla con un console.log()
  */
