@@ -94,8 +94,19 @@ let lavarseManos = HOUSE_SINKS/2;
 console.log("Esta es la cantidad de lavamanos que dos personas pueden usar en la casa a la vez: " + lavarseManos);
 /*
  * Declarar variables que concatenen cadenas de texto
- *      -5 mensajes diferentes en pantalla, sin limite de palabras.
- * 
+ -5 mensajes diferentes en pantalla, sin limite de palabras.
+ */
+ let parejaJuanMaria = mascotaJuan + " y " + mascotaMaria;
+ console.log("Esta pareja tiene como mascotas: " + parejaJuanMaria);
+ let parejaJoseAmanda = mascotaJose + " y " + mascotaAmanda;
+ console.log("Esta pareja tiene como mascotas: " + parejaJoseAmanda);
+ let parejaRobertoCecilia = mascotaRoberto + " y " + mascotaCecilia;
+ console.log("Esta pareja tiene como mascotas: " + parejaRobertoCecilia);
+ let parejaAlbertoAlexa = mascotaAlberto + " y " + mascotaAlexa;
+ console.log("Esta pareja tiene como mascotas: " + parejaAlbertoAlexa);
+ let parejaSergioJennifer = mascotaSergio + " y " + mascotaJennifer;
+ console.log("Esta pareja tiene como mascotas: " + parejaSergioJennifer);
+ /*
  * Declarar 5 variables y convertirlas a otro tipo de dato
  * 
  *  CONSIDERACIONES: poner en practica las mejores practicas para declaracion de variables.
