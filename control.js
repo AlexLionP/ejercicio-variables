@@ -36,9 +36,7 @@ if (promedio >= 7){
 }
 else {console.log("Reprobado")}
 
-/*
-
-/** Ejercicio 4
+/* Ejercicio 4
  * 
  * Desarrolla un programa que evalue si un numero es divisible
  * entre 7 y 8
@@ -47,13 +45,16 @@ else {console.log("Reprobado")}
  * 
  * Si se cumple, imprimir verdadero
  * Si no, imprimir falso
- * 
- * 
+
  * Consideracion - Utilizar la estructura if-else
  * Casos de prueba: 56, 7, 8, 0, 224, 73
  */
+function divisibleSieteYOcho(num){
+    if(num%7===0 && num%8===0) {console.log("Verdadero")}
+    else {console.log("Falso")}
+}
 
-/** Ejercicio 5
+/* Ejercicio 5
  * 
  * Desarrolla un programa que evalue si un numero es divisible
  * entre 4 o 9
@@ -65,7 +66,10 @@ else {console.log("Reprobado")}
  * 
  * Consideracion - Utilizar la estructura if-else
  */
-
+function divisibleCuatroONueve(num){
+    if(num%4===0 || num%9===0) {console.log("Verdadero")}
+    else {console.log("Falso")}
+}
 /** Ejercicio 6
  * 
  * Crear un programa que funcione como una calculadora simple
@@ -86,7 +90,31 @@ else {console.log("Reprobado")}
  * 
  * Consideraciones: utilizar la estructura switch
  */
-
+//let operacion ="suma";
+//let num1 = 3;
+//let num2 = 2;
+function calculadora(operacion, num1, num2){
+    switch(operacion.toLowerCase()){
+        case "suma": 
+        suma = num1 + num2;
+        console.log("La suma es: " + suma);
+        break;
+        case "resta": 
+        resta = num1 - num2;
+        console.log("La resta es: " + resta);
+        break;
+        case "multiplicacion": 
+        multiplicacion = num1*num2;
+        console.log("La multiplicación es: " + multiplicacion);
+        break;
+        case "division": 
+        division = num1 / num2;
+        console.log("La division es: " + division);
+        break;
+        default: console.log("No reconozco esa operacion o numeros");
+        break;
+}
+}
 /** Ejercicio 7
  * 
  * Realizar un programa que reciba como parametro una categoria de peliculas
