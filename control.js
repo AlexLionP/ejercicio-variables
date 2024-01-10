@@ -90,9 +90,7 @@ function divisibleCuatroONueve(num){
  * 
  * Consideraciones: utilizar la estructura switch
  */
-//let operacion ="suma";
-//let num1 = 3;
-//let num2 = 2;
+
 function calculadora(operacion, num1, num2){
     switch(operacion.toLowerCase()){
         case "suma": 
@@ -115,8 +113,7 @@ function calculadora(operacion, num1, num2){
         break;
 }
 }
-/** Ejercicio 7
- * 
+/* Ejercicio 7
  * Realizar un programa que reciba como parametro una categoria de peliculas
  * 
  * -accion
@@ -131,7 +128,30 @@ function calculadora(operacion, num1, num2){
  * 
  * Consideraciones: utilizar la estructura switch
  */
-
+function peliculaRecomendada(genero){
+    switch(genero.toLowerCase()){
+        case "accion": 
+        console.log("Te recomiendo ver Terminator 2");
+        break;
+        case "drama":
+        console.log("Te recomiendo ver The Best Offer");
+        break;
+        case "comedia":
+        console.log("Te recomiendo ver White Chicks");
+        break;
+        case "romance":
+        console.log("Te recomiendo ver My Life Before You");
+        break;
+        case "suspenso":
+        console.log("Te recomiendo ver The Gift");
+        break;
+        case "Terror":
+        console.log("Te recomiendo ver Incantation");
+        break;
+        default: console.log("No reconozco esa operacion o numeros");
+        break;
+}
+}
 
 /** Ejercicio 8
  * 
