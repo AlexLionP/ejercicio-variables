@@ -167,7 +167,22 @@ function peliculaRecomendada(genero){
  * Segun sea la opcion indicada, imprimir en pantalla la accion a realizar
  * Utilizar if/else
  */
-
+function cajeroATM(opcion){
+    opcion = opcion.toLowerCase()
+    if(opcion == "retirar dinero"){
+        console.log("Ya puedes retirar tu dinero")
+    }
+    else if(opcion == "transferencia"){
+        console.log("La transferencia se realizó exitosamente")
+    }
+    else if(opcion == "deposito"){
+        console.log("El deposito se realizó correctamente")
+    }
+    else if(opcion == "pago de servicios"){
+        console.log("El pago se realizó exitosamente")
+    }
+    else{console.log("No reconozco esa operacion")}
+}
 /** Ejercicio 9
  * 
  * Escribir en codigo un programa conversor de divisas
@@ -184,7 +199,32 @@ function peliculaRecomendada(genero){
  * Consideracion: estructura switch
  * 
  */
-
+function conversorDivisas(divisa,pesos){
+    switch(divisa.toLowerCase()){
+        case "dolares": 
+        dolares =  pesos*0.059;
+        console.log("Recibes: " + dolares);
+        break;
+        case "euros":
+        euros =  pesos*0.054;
+        console.log("Recibes: " + euros);
+        break;
+        case "yenes":
+        yenes =  pesos*8.57;
+        console.log("Recibes: " + yenes);
+        break;
+        case "libra":
+        libra =  pesos*0.046;
+        console.log("Recibes: " + libras);
+        break;
+        case "franco":
+        franco =  pesos*0.050;
+        console.log("Recibes: " + francos);
+        break;
+        default: console.log("No reconozco esa operacion o numeros");
+        break;
+}
+}
 /** Ejercicio 10
  * 
  * Realizar un programa que calcule un descuento del 10% a un producto si se ingresa el codigo
