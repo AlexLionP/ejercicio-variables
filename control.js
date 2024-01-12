@@ -9,13 +9,16 @@
  * 
  * Consideraciones: utilizar la estructura if-else
  */
-edad = 22
-if (edad >= 18) {
+console.log("Ejercicio 1")
+function puedeVotar(edad){
+    if (edad >= 18) {
     console.log("La persona puede votar porque tiene " + edad + " años")
-}
-else{
+    }
+    else{
     console.log("La persona es menor de edad y no puede votar porque tiene " + edad + " años")
+    }
 }
+puedeVotar(26)
 /** Ejercicio 2
  * 
  * Desarrolla un programa que permita obtener el promedio de un/a alumno/a
@@ -26,16 +29,32 @@ else{
  * 
  * Consideraciones: utilizar la estructura if-else
  */
-let calificacion1 = 8
-let calificacion2 = 6
-let calificacion3 = 5
-let calificacion4 = 7 
-let promedio = (calificacion1 + calificacion2 + calificacion3 + calificacion4)/4
-if (promedio >= 7){
-    console.log("Aprobado")
+console.log("Ejercicio 2")
+function promedio(calif1,calif2,calif3,calif4){
+    let promedio = (calif1 + calif2 + calif3 + calif4)/4
+    if (promedio >= 7){
+    console.log("Aprobado");
+    }
+    else {console.log("Reprobado");}
 }
-else {console.log("Reprobado")}
+promedio(9,8,6,10);
 
+/** Ejercicio 3
+ * 
+ * Desarrolla un programa que evalue si un numero es primo
+ * 
+ * Debe recibir como parametro un numero aleatorio
+ * 
+ * Consideraciones: utilizar la estructura if-else
+ */
+console.log("Ejercicio 3");
+function isPrime(numero){
+    if(numero%2!==0 && numero%3!==0 && numero%5!==0 && numero%7!==0 && numero%11!==0){
+        console.log(`${numero} si es un numero primo`);
+    }
+    else{console.log(`${numero} no es un numero primo`)}
+}
+isPrime(6);
 /* Ejercicio 4
  * 
  * Desarrolla un programa que evalue si un numero es divisible
@@ -49,11 +68,17 @@ else {console.log("Reprobado")}
  * Consideracion - Utilizar la estructura if-else
  * Casos de prueba: 56, 7, 8, 0, 224, 73
  */
+console.log("Ejercicio 4")
 function divisibleSieteYOcho(num){
     if(num%7===0 && num%8===0) {console.log("Verdadero")}
     else {console.log("Falso")}
 }
-
+divisibleCuatroONueve(56);
+divisibleCuatroONueve(7);
+divisibleCuatroONueve(8);
+divisibleCuatroONueve(0);
+divisibleCuatroONueve(224);
+divisibleCuatroONueve(73);
 /* Ejercicio 5
  * 
  * Desarrolla un programa que evalue si un numero es divisible
@@ -66,10 +91,12 @@ function divisibleSieteYOcho(num){
  * 
  * Consideracion - Utilizar la estructura if-else
  */
+console.log("Ejercicio 5")
 function divisibleCuatroONueve(num){
     if(num%4===0 || num%9===0) {console.log("Verdadero")}
     else {console.log("Falso")}
 }
+divisibleCuatroONueve(27);
 /** Ejercicio 6
  * 
  * Crear un programa que funcione como una calculadora simple
@@ -90,7 +117,7 @@ function divisibleCuatroONueve(num){
  * 
  * Consideraciones: utilizar la estructura switch
  */
-
+console.log("Ejercicio 6")
 function calculadora(operacion, num1, num2){
     switch(operacion.toLowerCase()){
         case "suma": 
@@ -113,6 +140,7 @@ function calculadora(operacion, num1, num2){
         break;
 }
 }
+calculadora("suma",3,2);
 /* Ejercicio 7
  * Realizar un programa que reciba como parametro una categoria de peliculas
  * 
@@ -128,6 +156,7 @@ function calculadora(operacion, num1, num2){
  * 
  * Consideraciones: utilizar la estructura switch
  */
+console.log("Ejercicio 7")
 function peliculaRecomendada(genero){
     switch(genero.toLowerCase()){
         case "accion": 
@@ -152,7 +181,7 @@ function peliculaRecomendada(genero){
         break;
 }
 }
-
+peliculaRecomendada("suspenso");
 /** Ejercicio 8
  * 
  * Crear una interfaz de un cajero ATM
@@ -167,6 +196,7 @@ function peliculaRecomendada(genero){
  * Segun sea la opcion indicada, imprimir en pantalla la accion a realizar
  * Utilizar if/else
  */
+console.log("Ejercicio 8")
 function cajeroATM(opcion){
     opcion = opcion.toLowerCase()
     if(opcion == "retirar dinero"){
@@ -183,6 +213,7 @@ function cajeroATM(opcion){
     }
     else{console.log("No reconozco esa operacion")}
 }
+cajeroATM("deposito");
 /** Ejercicio 9
  * 
  * Escribir en codigo un programa conversor de divisas
@@ -199,32 +230,34 @@ function cajeroATM(opcion){
  * Consideracion: estructura switch
  * 
  */
+console.log("Ejercicio 9")
 function conversorDivisas(divisa,pesos){
     switch(divisa.toLowerCase()){
         case "dolares": 
         dolares =  pesos*0.059;
-        console.log("Recibes: " + dolares);
+        console.log(`Recibes: ${dolares} dolares`);
         break;
         case "euros":
         euros =  pesos*0.054;
-        console.log("Recibes: " + euros);
+        console.log(`Recibes: ${euros} euros`);
         break;
         case "yenes":
         yenes =  pesos*8.57;
-        console.log("Recibes: " + yenes);
+        console.log(`Recibes: ${yenes} yenes`);
         break;
         case "libra":
         libra =  pesos*0.046;
-        console.log("Recibes: " + libras);
+        console.log(`Recibes: ${libras} libras`);
         break;
         case "franco":
         franco =  pesos*0.050;
-        console.log("Recibes: " + francos);
+        console.log(`Recibes: ${franco} francos`);
         break;
         default: console.log("No reconozco esa operacion o numeros");
         break;
 }
 }
+conversorDivisas("dolares",250)
 /** Ejercicio 10
  * 
  * Realizar un programa que calcule un descuento del 10% a un producto si se ingresa el codigo
@@ -238,3 +271,26 @@ function conversorDivisas(divisa,pesos){
  * Consideracion: utilizar la estructura if-else
  * 
  */
+console.log("Ejercicio 10");
+function calcDescuento(precio,descuento){
+    descuento = descuento.toUpperCase()
+    if(descuento == "DESCUENTO10"){
+        console.log(`Tu precio con descuento es ${precio*0.9}`)
+    }
+    else if(descuento != "DESCUENTO10"){
+        console.log(`Tu precio es ${precio}`)
+    }
+    else{
+        console.log("No ingresaste ningun precio válido o código de descuento válido")
+    }
+}
+calcDescuento(100,"descuento10");
+calcDescuento(100,"descuento30");
+
+// opcion = opcion.toLowerCase()
+//     if(opcion == "retirar dinero"){
+//         console.log("Ya puedes retirar tu dinero")
+//     }
+//     else if(opcion == "transferencia"){
+//         console.log("La transferencia se realizó exitosamente")
+//     }
